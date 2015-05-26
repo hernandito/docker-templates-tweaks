@@ -1,1 +1,51 @@
-rrr
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>HR-Madsonic</Name>
+  <Description>Madsonic is a fork of the Subsonic 4.x Server, Madsonic is a full replacement for your current Subsonic server!, Madsonic is designed for people who want more from the vanilla Subsonic features.[br][br]&#13;
+[span style=\'color: #E80000;\'][b]Configuration[/b][/span]&#13;
+[b]/config[/b] This is where madsonic will store it\'s configuration file, database and logs.[br]&#13;
+[b]/media[/b] This is where madsonic will scan for media files.&#13;
+</Description>
+  <Registry>https://registry.hub.docker.com/u/hernandito/hr-madsonic-docker/</Registry>
+  <Repository>hernandito/hr-madsonic-docker</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>SSL</Name>
+      <Value>0</Value>
+    </Variable>
+  </Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>4040</HostPort>
+        <ContainerPort>4040</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4050</HostPort>
+        <ContainerPort>4050</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/madsonic</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/Music/Papi/</HostDir>
+      <ContainerDir>/music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Version>07d93962</Version>
+  <WebUI>http://[IP]:[PORT:4040]/</WebUI>
+  <Banner>http://i.imgur.com/LRSP3Hl.png</Banner>
+  <Icon>http://i.imgur.com/LRSP3Hl.png</Icon>
+  <ExtraParams></ExtraParams>
+</Container>
