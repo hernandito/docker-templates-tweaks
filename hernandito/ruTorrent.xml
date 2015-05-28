@@ -5,10 +5,16 @@
 [b][span style=\'color: #E80000;\']Directions:[/span][/b][br]&#13;
 [b]Mount the internal directory \"\"/config\"\" to a location on your cache for SSL certs, rTorrent config and session files[br]&#13;
 [b]Mount the internal directory \"\"/download\"\" to a location on your array for rTorrent downloads[br]&#13;
-[b]By default, the WebUI is accessible through  http://IPADDRESS:8089 or https://IPADDRESS:8099.[br]&#13;
-[b]For support visit http://lime-technology.com/forum/index.php?topic=38698.0&#13;
-[b]rTorrent config is done by editing the .rtorrent.rc file in /config[br]&#13;
-[b]Change EDGE=1 (under Advanced View) if you would prefer the latest GIT version of ruTorrent and Plugins[br]&#13;
+
+
+[b]Mount the internal directory \"\"/downloadunraid\"\" to the unRAID Download Folder. This is where files will get copied after downloads complete. They will then get processed by Sickbeard or Couchpotatoe, etc.[br]&#13;
+
+By default, the WebUI is accessible through  http://IPADDRESS:8089 or https://IPADDRESS:8099.[br]&#13;
+For support visit http://lime-technology.com/forum/index.php?topic=38698.0[br][br]&#13;
+[b]Edit the .htpasswd file in the /config folder to password secure ruTorrent[br][br]
+
+rTorrent config is done by editing the .rtorrent.rc file in /config[br]&#13;
+Change EDGE=1 (under Advanced View) if you would prefer the latest GIT version of ruTorrent and Plugins[br]&#13;
 </Description>
   <Registry>https://registry.hub.docker.com/u/hernandito/docker-rtorrent/</Registry>
   <Repository>hernandito/docker-rtorrent</Repository>
