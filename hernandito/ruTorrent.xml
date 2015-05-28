@@ -71,7 +71,7 @@ Change EDGE=1 (under Advanced View) if you would prefer the latest GIT version o
   </Data>
   <Version>879732be</Version>
   <WebUI>http://[IP]:[PORT:8089]/</WebUI>
-  <Banner></Banner>
-  <Icon>http://i.imgur.com/LWfuAG2.png</Icon>
+  <Banner>http://i.imgur.com/h2MNVb1.png</Banner>
+  <Icon>http://i.imgur.com/h2MNVb1.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
