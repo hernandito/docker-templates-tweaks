@@ -62,6 +62,13 @@ Change EDGE=1 (under Advanced View) if you would prefer the latest GIT version o
       <ContainerDir>/download</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+
+    <Volume>
+      <HostDir>/mnt/user/appdata/rtorrent/downloadwatch</HostDir>
+      <ContainerDir>/downloadwatch</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>	
+
     <Volume>
       <HostDir>/mnt/user/downloads/</HostDir>
       <ContainerDir>/downloadunraid</ContainerDir>
