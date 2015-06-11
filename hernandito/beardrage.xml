@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-<Name>BeardRage</Name>
+<Name>Sickrage HR</Name>
 <Beta>False</Beta>
 <Category>Downloaders: MediaApp:Video</Category>
 <Overview>Two in One container with both SickBeard and SickRage[br]Note only one can be run at any given time</Overview>
@@ -27,7 +27,7 @@
 </Variable>
 <Variable>
 <Name>BeardRage</Name>
-<Value>0</Value>
+<Value>1</Value>
 </Variable>
 </Environment>
 <Data>
