@@ -32,7 +32,7 @@
 </Environment>
 <Data>
 <Volume>
-<HostDir>/mnt/user/appdata/sickrage2/</HostDir>
+<HostDir>/mnt/user/appdata/sickrage/</HostDir>
 <ContainerDir>/config</ContainerDir>
 <Mode>rw</Mode>
 </Volume>
