@@ -40,12 +40,6 @@
       <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/sabnzbd/interfaces/</HostDir>
-      <ContainerDir>/usr/share/sabnzbdplus/interfaces</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-
   </Data>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <Banner>http://i.imgur.com/5k8nrYA.png</Banner>
