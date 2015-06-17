@@ -62,11 +62,6 @@ To access the Adminer web interface, go to: [b]your-server-ip:port/adminer [br]&
       <ContainerDir>/etc/localtime</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/cache/appdata/dropbox2/files/Calibre/</HostDir>
-      <ContainerDir>/books</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Version>7a2623cf</Version>
   <WebUI>http://[IP]:[PORT:81]/</WebUI>
