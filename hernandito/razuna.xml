@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+<Beta>False</Beta>
+<Category>Network:Web MediaServer:Photos</Category>
+<Date>2015-06-17</Date>
+  <Name>Razuna</Name>
+  <Description>
+    Razuna DAM server software. [br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]/opt[/b] : this path is used to store the Razuna[br]
+
+Username and password are [b]admin:admin[/b]. [br][br]
+Once you launch for first time, it will take you to a Configuration page:[br][br]
+You must have an existing MySQL database available. I recommend the MariaDB docker. This must be already setup. Enter appropiate values on config page.[br]
+Do NOT put port number on MySQL server address box.
+[br][br]
+ [b]YOU MUST ALSO HAVE A DATABASE TABLE IN YOUR DATABSE CALLED "resourcespace" [/b]. Create this manually prior to saving your configuration.[br]
+[br][br]
+
+In config page, leave "MySQL binary path" empty. [br][br]
+
+For all the PATHS for ImageMagick, Ghoscript, etc, enter "/usr/bin" and nothing else... without the quotes.
+
+
+
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/hernandito/docker-resourcespace/</Registry>
+  <Repository>hernandito/docker-resourcespace</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8113</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>JAVA_HOME</Name>
+      <Value>/usr/lib/jvm/java-7-oracle</Value>
+    </Variable>
+  </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/razuna/</HostDir>
+      <ContainerDir>/opt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:8112]/</WebUI>
+  <Banner>http://i.imgur.com/wACWbX5.png</Banner>
+  <Icon>http://i.imgur.com/wACWbX5.png</Icon>
+</Container>
+
+
