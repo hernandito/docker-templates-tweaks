@@ -24,8 +24,8 @@ For all the PATHS for ImageMagick, Ghoscript, etc, enter "/usr/bin" and nothing 
 
 
   </Description>
-  <Registry>https://registry.hub.docker.com/u/hernandito/docker-resourcespace/</Registry>
-  <Repository>hernandito/docker-resourcespace</Repository>
+  <Registry>https://registry.hub.docker.com/u/hernandito/razuna-docker/</Registry>
+  <Repository>hernandito/razuna-docker</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
