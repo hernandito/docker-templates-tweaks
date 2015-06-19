@@ -51,7 +51,7 @@ For all the PATHS for ImageMagick, Ghoscript, etc, enter "/usr/bin" and nothing 
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:8113]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8113]/razuna/</WebUI>
   <Banner>http://i.imgur.com/Jtio81S.png</Banner>
   <Icon>http://i.imgur.com/Jtio81S.png</Icon>
 </Container>
