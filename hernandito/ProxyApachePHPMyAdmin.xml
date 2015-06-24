@@ -2,7 +2,7 @@
 <Container>
   <Beta>False</Beta>
 <Category>Network:Web Network:Proxy</Category>
-  <Name>ProxyApachePHP</Name>
+  <Name>Proxy-Apache-PHP</Name>
   <Description>
     Fork of smdion Reverse Proxy Server[br]
     Reverse Proxy is a Apache based web server set up to act as a proxy with basic PHP web server capabilities[br][br]
