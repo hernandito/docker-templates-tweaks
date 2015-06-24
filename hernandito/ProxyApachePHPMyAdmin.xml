@@ -4,6 +4,7 @@
 <Category>Network:Web Network:Proxy</Category>
   <Name>ProxyApachePHP</Name>
   <Description>
+    Fork of smdion Reverse Proxy Server[br]
     Reverse Proxy is a Apache based web server set up to act as a proxy with basic PHP web server capabilities[br][br]
     [b][span style='color: #E80000;']Directions:[/span][/b][br]
     [b]/config[/b] : this path is used to store the configuration and the SSL certs files of the reverse proxy.[br]
@@ -36,12 +37,12 @@
   </Environment>
   <Data>
     <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/reverseproxy/web/</HostDir>
       <ContainerDir>/web</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
         <Volume>
-      <HostDir></HostDir>
+      <HostDir>/mnt/user/appdata/reverseproxy/config/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -52,6 +53,6 @@
     </Volume>
   </Data>
     <WebUI></WebUI>
-  <Banner>http://i.imgur.com/u4nQCdW.png</Banner>
-  <Icon>http://i.imgur.com/M5pmW3X.png</Icon>
+  <Banner>http://i.imgur.com/frfQ3ji.png</Banner>
+  <Icon>http://i.imgur.com/frfQ3ji.png</Icon>
 </Container>
