@@ -35,6 +35,13 @@
     <Mode>bridge</Mode>
     <Publish/>
   </Networking>
+        <Port>
+        <HostPort>8091</HostPort>
+        <ContainerPort>8181</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+  
+  
   <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/headphones/</HostDir>
@@ -48,7 +55,7 @@
     </Volume>
      <Volume>
       <HostDir>/mnt/</HostDir>
-      <ContainerDir>/dowloands</ContainerDir>
+      <ContainerDir>/downloads</ContainerDir>
       <Mode>rw</Mode>
     </Volume> 
  
