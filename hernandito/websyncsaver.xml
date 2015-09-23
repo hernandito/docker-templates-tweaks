@@ -30,7 +30,7 @@
  
   <Data>
     <Volume>
-      <HostDir>/mnt/cache/appdata/websync/</HostDir>
+      <HostDir></HostDir>
       <ContainerDir>/nobody/websync/dist</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
