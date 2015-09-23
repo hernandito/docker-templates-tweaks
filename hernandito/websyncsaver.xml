@@ -9,11 +9,11 @@
 [font size=4][/font]
 </Changes>
 <Category>Backup: Tools:</Category>
-  <Support>http://lime-technology.com/forum/index.php?topic=39646</Support>
+  <Support></Support>
   <Description>An easy way to manage rsync jobs.[/br]With websync's great and intuitive user interface you can now easily set up and schedule backup tasks.</Description>
   <Overview>An easy way to manage rsync jobs.[/br]With websync's great and intuitive user interface you can now easily set up and schedule backup tasks.</Overview>
-  <Registry>https://registry.hub.docker.com/u/sparklyballs/websync/</Registry>
-  <Repository>sparklyballs/websync</Repository>
+  <Registry>https://hub.docker.com/r/hernandito/websync-saver/builds/</Registry>
+  <Repository>hernandito/websync-saver</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
