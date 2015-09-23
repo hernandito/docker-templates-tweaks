@@ -28,15 +28,13 @@
     </Publish>
   </Networking>
  
-   <Data>
+  <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/websync/</HostDir>
       <ContainerDir>/nobody/websync/dist</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
- 
-  <Data>
-    <Volume>
+     <Volume>
       <HostDir></HostDir>
       <ContainerDir>/Source</ContainerDir>
       <Mode>rw</Mode>
