@@ -35,7 +35,7 @@
       <Mode>rw</Mode>
     </Volume>
      <Volume>
-      <HostDir></HostDir>
+      <HostDir>/</HostDir>
       <ContainerDir>/Source</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
