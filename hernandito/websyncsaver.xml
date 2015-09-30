@@ -12,7 +12,7 @@
   <Support></Support>
   <Description>An easy way to manage rsync jobs.[/br]With websync's great and intuitive user interface you can now easily set up and schedule backup tasks.</Description>
   <Overview>An easy way to manage rsync jobs.[/br]With websync's great and intuitive user interface you can now easily set up and schedule backup tasks.</Overview>
-  <Registry>https://hub.docker.com/r/hernandito/websync-saver/builds/</Registry>
+  <Registry>https://hub.docker.com/r/hernandito/websync-saver/</Registry>
   <Repository>hernandito/websync-saver</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
