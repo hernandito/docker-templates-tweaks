@@ -52,6 +52,6 @@
   <Version></Version>
   <WebUI>http://[IP]:[PORT:8081]/sick</WebUI>
   <Banner>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/sickrage-banner.png</Banner>
-  <Icon>http://i.imgur.com/0vc54Oq.png</Icon>
+  <Icon>http://i.imgur.com/upiIv5W.png</Icon>
   <ExtraParams></ExtraParams>
 </Container>
