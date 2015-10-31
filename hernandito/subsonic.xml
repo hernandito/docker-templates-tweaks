@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Subsonic</Name>
+  <Name>Subsonic-HR</Name>
   <Beta>False</Beta>
   <Category>MediaServer:Video MediaServer:Music</Category>
   <Description>
@@ -27,6 +27,10 @@
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
+    <Variable>
+      <Name>TERM</Name>
+      <Value>xterm</Value> 
+    </Variable>
     <Variable>
       <Name>WEB_PORT</Name>
       <Value>4040</Value> 
