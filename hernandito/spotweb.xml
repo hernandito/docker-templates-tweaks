@@ -16,8 +16,8 @@ Go to the /web/adminer folder from above, and edit the .htaccess file in there. 
 Save the file, and [b]restart[/b] the container.[br][br]&#13;
 To access the Adminer web interface, go to: [b]your-server-ip:port/adminer [br]&#13;
 </Description>
-  <Registry>https://hub.docker.com/r/hernandito/spotwebserverunraid/</Registry>
-  <Repository>hernandito/spotwebserverunraid</Repository>
+  <Registry>https://hub.docker.com/r/hernandito/spotweb-docker-unraid/</Registry>
+  <Repository>hernandito/spotweb-docker-unraid</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment/>
