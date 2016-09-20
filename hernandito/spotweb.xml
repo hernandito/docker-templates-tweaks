@@ -47,6 +47,16 @@ To access the Adminer web interface, go to: [b]your-server-ip:port/adminer [br]&
       <ContainerDir>/web</ContainerDir>
       <Mode>rw</Mode>
     </Volume>    
+     <Volume>
+      <HostDir>/mnt/user/appdata/spotweb/mysql/</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>    
+     <Volume>
+      <HostDir>/mnt/user/appdata/spotweb/logs/</HostDir>
+      <ContainerDir>/logs</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume> 
     <Volume>
       <HostDir>/etc/localtime</HostDir>
       <ContainerDir>/etc/localtime</ContainerDir>
