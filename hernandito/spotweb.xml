@@ -38,10 +38,15 @@ To access the Adminer web interface, go to: [b]your-server-ip:port/adminer [br]&
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/spotweb/</HostDir>
+      <HostDir>/mnt/user/appdata/spotweb/config/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/spotweb/www/</HostDir>
+      <ContainerDir>/web</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>    
     <Volume>
       <HostDir>/etc/localtime</HostDir>
       <ContainerDir>/etc/localtime</ContainerDir>
