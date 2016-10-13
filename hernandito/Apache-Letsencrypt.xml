@@ -47,7 +47,7 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>80</HostPort>
+        <HostPort>81</HostPort>
         <ContainerPort>80</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
@@ -72,7 +72,7 @@
   </Data>
   <Version></Version>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
-  <Banner>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/apacheweb-banner.png</Banner>
+  <Banner>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Banner>
   <Icon>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Icon>
   <ExtraParams></ExtraParams>
 <DonateText>Donations</DonateText>
