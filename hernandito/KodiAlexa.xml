@@ -47,21 +47,6 @@
     </Publish>
   </Networking>
   <Data>
-    <Volume>
-      <HostDir>/opt/appdata/subsonic/</HostDir>
-      <ContainerDir>/subsonic</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/music/</HostDir>
-      <ContainerDir>/music</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/podcasts/</HostDir>
-      <ContainerDir>/podcasts</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <Banner></Banner>
