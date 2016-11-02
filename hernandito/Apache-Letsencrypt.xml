@@ -56,10 +56,6 @@
       <Name>YOUR_DOMAIN</Name>
       <Value>yourdomain.com, www.yourdomain.com</Value>
     </Variable>
-    <Variable>
-      <Name>ADVANCED_SCRIPT</Name>
-      <Value>true</Value>
-    </Variable>	
 </Environment>
   <Networking>
     <Mode>bridge</Mode>
