@@ -4,17 +4,24 @@
 <Category>Network:Web Network:Proxy</Category>
 <Date>2015-11-06</Date>
   <Name>Apache-LE</Name>
-  <Support>http://lime-technology.com/forum/index.php?topic=43858.0</Support>
-  <Overview>This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS.</Overview>
-  <Changes>[center][img width='300px' src='https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_small.png'][/center]
-
-[center][font size=4]ApacheChange Log[/font][/center]
-[b]06.11.2015:[/b] Initial Release</Changes>
+  <Support></Support>
+  <Overview>Many thanks to the LinuxServer IO team for crreating the original Apache docker. [br][br]
+  This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS. In addition, it obtains SSL certificates from LetEncrypt for your domain name. In order for this to work, you must have a valid internet accessible domain name that points to this docker. </Overview>
+  <Changes></Changes>
   <Description>This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS.[br]
   [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
   [b]80[/b] Standard HTTP Port [br]
   [b]443[/b] Standard HTTPS Port [br]
-  [b]/config[/b]Storing Configuration and the www folder[br]
+  [b]/config[/b]Storing Configuration and the www folder[br][br]
+  
+  [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]
+  [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br][br]
+  [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]
+  
+  [b][span style='color: #E80000;']A sample default.conf file is placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]
+  
+  [span style='color: #0040ff;'][b]Please note.[/b] This container has to load a lot of dependencies. When installing for the first time, it will take a nice chunk of time before it loads. You can monitor the progress by clicking the log window.[/span][br][br]
+  
   </Description>
   <Project>http://httpd.apache.org/docs/2.2/mod/mod_proxy.html</Project>
   <Registry>https://hub.docker.com/r/hernandito/apache-letsencrypt/</Registry>
