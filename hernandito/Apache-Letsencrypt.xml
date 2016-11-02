@@ -16,7 +16,7 @@
   [b]//etc/letsencrypt[/b] Place this inside the config folder. Recommend using .../appdata/Apache-LE/letsencrypt/[br][br]
   
   [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]
-  [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br][br]
+  [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br]
   [b]SINGLE_DOMAIN[/b] Valid Single Domain Name this will go in your Apache default.conf file. [b]USE ONLY ONE DOMAIN.[b][br] 
   [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]
   
