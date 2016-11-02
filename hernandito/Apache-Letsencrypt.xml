@@ -12,7 +12,8 @@
   [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
   [b]80[/b] Standard HTTP Port [br]
   [b]443[/b] Standard HTTPS Port [br]
-  [b]/config[/b]Storing Configuration and the www folder[br][br]
+  [b]/config[/b] Storing Configuration and the www folder[br]
+  [b]//etc/letsencrypt[/b] Place this inside the config folder. Recommend using .../appdata/Apache-LE/letsencrypt/[br][br]
   
   [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]
   [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br][br]
@@ -40,6 +41,10 @@
     <Variable>
       <Name>YOUR_EMAIL</Name>
       <Value>youremail@here.com</Value>
+    </Variable>
+	<Variable>
+      <Name>SINGLE_DOMAIN</Name>
+      <Value>yourdomain.com</Value>
     </Variable>
 	<Variable>
       <Name>YOUR_DOMAIN</Name>
