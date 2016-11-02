@@ -17,6 +17,7 @@
   
   [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]
   [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br][br]
+  [b]SINGLE_DOMAIN[/b] Valid Single Domain Name this will go in your Apache default.conf file. [b]USE ONLY ONE DOMAIN.[b][br] 
   [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]
   
   [b][span style='color: #E80000;']A sample default.conf file is placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]
