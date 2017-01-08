@@ -21,7 +21,7 @@
   <Data>
     <Volume>
       <HostDir>/mnt/cache/appdata/phpmyadmin/www/</HostDir>
-      <ContainerDir>/var/www/html/</ContainerDir>
+      <ContainerDir>/sessions/</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
