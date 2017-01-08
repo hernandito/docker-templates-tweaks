@@ -20,8 +20,13 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/phpmyadmin/</HostDir>
+      <HostDir>/mnt/cache/appdata/phpmyadmin/</HostDir>
       <ContainerDir>/sessions</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/phpmyadmin/www/</HostDir>
+      <ContainerDir>/www</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
