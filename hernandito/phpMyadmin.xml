@@ -19,7 +19,11 @@
     </Publish>
   </Networking>
   <Data>
-
+    <Volume>
+      <HostDir>/mnt/cache/appdata/phpmyadmin/www/</HostDir>
+      <ContainerDir>/var/www/html/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
     <Volume>
       <HostDir>/etc/localtime</HostDir>
       <ContainerDir>/etc/localtime</ContainerDir>
