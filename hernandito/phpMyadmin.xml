@@ -29,13 +29,13 @@
       <ContainerDir>/etc/localtime</ContainerDir>
       <Mode>ro</Mode>
     </Volume>
-  
-  
-  </Data>
       <Variable>
       <Name>mysql</Name>
       <Value>mariadb</Value> 
-    </Variable>
+    </Variable>  
+  
+  </Data>
+
   <Version>7a2623cf</Version>
   <WebUI>http://[IP]:[PORT:1962]/</WebUI>
   <Banner>http://i.imgur.com/gQYUBaz.png</Banner>
