@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+<Beta>False</Beta>
+<Category>Network:Web Network:Proxy</Category>
+<Date>2015-11-06</Date>
+  <Name>Apache-LE-KodiKontrol</Name>
+  <Support></Support>
+  <Overview>
+  
+  
+  Many thanks to the LinuxServer IO team for crreating the original Apache docker. Please use the button below to donate to them.[br][br]
+  This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS. In addition, it obtains SSL certificates from LetEncrypt for your domain name. In order for this to work, you must have a valid internet accessible domain name that points to this docker. </Overview>
+  <Changes>
+  [img  src='https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png']
+  </Changes>
+  <Description>This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS.[br]
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]
+  [b]80[/b] Standard HTTP Port [br]
+  [b]443[/b] Standard HTTPS Port [br]
+  [b]/config[/b] Storing Configuration and the www folder[br]
+  [b]//etc/letsencrypt[/b] Place this inside the config folder. Recommend using .../appdata/Apache-LE/letsencrypt/[br][br]
+  
+  [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]
+  [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br]
+  [b]SINGLE_DOMAIN[/b] Valid Single Domain Name this will go in your Apache default.conf file. [b]USE ONLY ONE DOMAIN.[b][br] 
+  [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]
+  
+  [b][span style='color: #E80000;']A sample default.conf file is placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]
+  
+  [span style='color: #0040ff;'][b]Please note.[/b] This container has to load a lot of dependencies. When installing for the first time, it will take a nice chunk of time before it loads. You can monitor the progress by clicking the log window.[/span][br][br]
+  
+  </Description>
+  <Project>http://httpd.apache.org/docs/2.2/mod/mod_proxy.html</Project>
+  <Registry>https://hub.docker.com/r/hernandito/apache-le-kk/</Registry>
+  <Repository>hernandito/apache-le-kk</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+    <Variable>
+      <Name>PUID</Name>
+      <Value>99</Value>
+    </Variable>
+    <Variable>
+      <Name>PGID</Name>
+      <Value>100</Value>
+    </Variable>
+    <Variable>
+      <Name>YOUR_EMAIL</Name>
+      <Value>youremail@here.com</Value>
+    </Variable>
+	<Variable>
+      <Name>SINGLE_DOMAIN</Name>
+      <Value>yourdomain.com</Value>
+    </Variable>
+	<Variable>
+      <Name>YOUR_DOMAIN</Name>
+      <Value>yourdomain.com, www.yourdomain.com</Value>
+    </Variable>
+</Environment>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>81</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir></HostDir>
+      <ContainerDir>/etc/letsencrypt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>	
+  </Data>
+  <Version></Version>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <Banner>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Banner>
+  <Icon>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Icon>
+  <ExtraParams></ExtraParams>
+<DonateText>Donations</DonateText>
+<DonateLink>https://www.linuxserver.io/index.php/donations/</DonateLink>
+<DonateImg>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/donate.png</DonateImg>
+<BaseImage>linuxserver/baseimage.apache</BaseImage>
+</Container>
