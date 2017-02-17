@@ -70,6 +70,11 @@
         <ContainerPort>443</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>5454</HostPort>
+        <ContainerPort>5005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>	  
     </Publish>
   </Networking>
   <Data>
