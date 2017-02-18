@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Sonos API</Name>
+  <Beta>False</Beta>
+  <Category>MediaServer:Video MediaServer:Music</Category>
+  <Description>
+    test for Sonos API to imlement w/ Alexa [br][br]
+
+
+  </Description>
+  <Registry></Registry>
+  <GitHub>https://github.com/chrisns/docker-node-sonos-http-api</GitHub>
+  <Repository>chrisns/docker-node-sonos-http-api</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Environment>
+	</Environment>
+  <Networking>
+    <Mode>host</Mode>
+     <Publish>
+      <Port>
+        <HostPort>5007</HostPort>
+        <ContainerPort>5005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5007/</WebUI>
+  <Banner></Banner>
+  <Icon>http://i.imgur.com/fWqcDnZ.png</Icon>
+</Container>
+
+
+<!-- docker run -p "443:8780" -e KODI_ADDRESS="192.168.0.103" -e KODI_PORT="80" -e KODI_USERNAME="xbmc" -e KODI_PASSWORD="xbmc" kuroshi/kodi-alexa
+-->
