@@ -1,37 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
   <Name>Sonos API</Name>
-  <Beta>False</Beta>
+  <Beta>True</Beta>
   <Category>MediaServer:Video MediaServer:Music</Category>
   <Description>
-    test for Sonos API to imlement w/ Alexa [br][br]
+    Sonos web-based API [br][br]
 
 
   </Description>
-  <Registry></Registry>
-  <GitHub>https://github.com/chrisns/docker-node-sonos-http-api</GitHub>
+  <Registry>https://hub.docker.com/r/chrisns/docker-node-sonos-http-api/</Registry>
+  <GitHub>https://hub.docker.com/r/chrisns/docker-node-sonos-http-api/</GitHub>
   <Repository>chrisns/docker-node-sonos-http-api</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
-	</Environment>
+    <Variable>
+      <Name>TERM</Name>
+      <Value>xterm</Value> 
+    </Variable>
+  </Environment>
   <Networking>
     <Mode>host</Mode>
      <Publish>
       <Port>
-        <HostPort>5007</HostPort>
+        <HostPort>5005</HostPort>
         <ContainerPort>5005</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
   </Networking>
   <Data>
+    <Volume>  
+      <HostDir>/mnt/cache/appdata/sonos-api/</HostDir>
+      <ContainerDir>/app/</ContainerDir>
+	  <Mode>rw</Mode>
+    </Volume>
+    <Volume>	
+      <HostDir>/mnt/cache/appdata/sonos-api/clips</HostDir>
+      <ContainerDir>/app/static/clips/</ContainerDir>
+	  <Mode>rw</Mode>
+    </Volume>
+    <Volume>	
+      <HostDir>/mnt/cache/appdata/sonos-api/settings</HostDir>
+      <ContainerDir>/app/settings/</ContainerDir>
+	  <Mode>rw</Mode>
+    </Volume>
+    <Volume>	
+      <HostDir>/mnt/cache/appdata/sonos-api/cache/</HostDir>
+      <ContainerDir>/app/cache</ContainerDir>
+	  <Mode>rw</Mode>
+    </Volume>
+    <Volume>	
+	  <HostDir>/mnt/cache/appdata/sonos-api/presets/</HostDir>
+      <ContainerDir>/app/presets/</ContainerDir>
+	  <Mode>rw</Mode>
+    </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:5007/</WebUI>
-  <Banner></Banner>
+  <WebUI>http://[IP]:[PORT:5005]/</WebUI>
+  <Banner>http://i.imgur.com/zlBhvgD.png</Banner>
   <Icon>http://i.imgur.com/fWqcDnZ.png</Icon>
 </Container>
-
-
-<!-- docker run -p "443:8780" -e KODI_ADDRESS="192.168.0.103" -e KODI_PORT="80" -e KODI_USERNAME="xbmc" -e KODI_PASSWORD="xbmc" kuroshi/kodi-alexa
--->

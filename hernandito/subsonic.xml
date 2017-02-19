@@ -1,29 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Subsonic-HR</Name>
+  <Name>Suonos API</Name>
   <Beta>False</Beta>
   <Category>MediaServer:Video MediaServer:Music</Category>
   <Description>
-    Subsonic is an open source, web-based media server. [br][br]
+    Sonos web-based API [br][br]
 
-    Because Subsonic was written in Java, it may be run on any operating system with Java support. [br]
-    Subsonic supports streaming to multiple clients simultaneously, and supports any streamable media (including MP3, AAC, and Ogg).[br]
-    Subsonic also supports on-the-fly media conversion (through the use of plugins) of most popular media formats, including WMA, FLAC, and more.[br][br]
 
-    [b][span style='color: #E80000;']Directions:[/span][/b][br]
-    [b]/subsonic[/b] : set this path to where you wish Subsonic to store it's configuration.[br]
-    [b]/music[/b]    : set this path to where you wish Subsonic to search for music.[br]
-    [b]/podcasts[/b] : set this path to where you wish Subsonic to store and share podcasts from.[br]
-    [br][br]
-    Optional Environment Variables:[br]
-    [b]SSL_PORT[/b]  : this is the HTTPS port for Subsonic, if set HTTP is disabled not matter its value. [br]
-    [b]WEB_PORT[/b]  : this is the HTTP port for Subsonic, its only effective if SSL_PORT is set to 0. [br]
-    [b]MAX_MEM[/b]   : this is the numberic value for the maximum Java heap size. [br]
-    [span style=\'color: #E80000;\']If changing SSL_PORT and WEB_PORT values please ensure you change the maps as well.[/span][br]
   </Description>
-  <Registry>https://hub.docker.com/r/hernandito/docker-subsonic/</Registry>
-  <GitHub>https://github.com/hernandito/docker-subsonic.git</GitHub>
-  <Repository>hernandito/docker-subsonic</Repository>
+  <Registry>https://hub.docker.com/r/chrisns/docker-node-sonos-http-api/</Registry>
+  <GitHub>https://hub.docker.com/r/chrisns/docker-node-sonos-http-api/</GitHub>
+  <Repository>chrisns/docker-node-sonos-http-api</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -34,14 +21,6 @@
     <Variable>
       <Name>WEB_PORT</Name>
       <Value>4040</Value> 
-    </Variable>
-    <Variable>
-      <Name>SSL_PORT</Name>
-      <Value>0</Value> 
-    </Variable>
-    <Variable>
-      <Name>MAX_MEM</Name>
-      <Value>150</Value> 
     </Variable>
   </Environment>
   <Networking>
