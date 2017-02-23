@@ -97,7 +97,7 @@
   <Version></Version>
   <WebUI>http://[IP]:[PORT:80]/</WebUI>
   <Banner>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Banner>
-  <Icon>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Icon>
+  <Icon>http://i.imgur.com/22PDdC8.png</Icon>
   <ExtraParams></ExtraParams>
 <DonateText>Donations</DonateText>
 <DonateLink>https://www.linuxserver.io/index.php/donations/</DonateLink>
