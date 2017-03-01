@@ -8,9 +8,9 @@
 
 
   </Description>
-  <Registry>https://hub.docker.com/r/chrisns/docker-node-sonos-http-api/</Registry>
+  <Registry>https://hub.docker.com/r/hernandito/sonoso-api-nodejs/</Registry>
   <GitHub>https://hub.docker.com/r/chrisns/docker-node-sonos-http-api/</GitHub>
-  <Repository>chrisns/docker-node-sonos-http-api</Repository>
+  <Repository>hernandito/sonoso-api-nodejs</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Environment>
@@ -23,7 +23,7 @@
     <Mode>host</Mode>
      <Publish>
       <Port>
-        <HostPort></HostPort>
+        <HostPort>5005</HostPort>
         <ContainerPort>5005</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>

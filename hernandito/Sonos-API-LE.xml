@@ -44,21 +44,9 @@
       <Name>PGID</Name>
       <Value>100</Value>
     </Variable>
-    <Variable>
-      <Name>YOUR_EMAIL</Name>
-      <Value>youremail@here.com</Value>
-    </Variable>
-	<Variable>
-      <Name>SINGLE_DOMAIN</Name>
-      <Value>yourdomain.com</Value>
-    </Variable>
-	<Variable>
-      <Name>YOUR_DOMAIN</Name>
-      <Value>yourdomain.com, www.yourdomain.com</Value>
-    </Variable>
 </Environment>
   <Networking>
-    <Mode>bridge</Mode>
+    <Mode>host</Mode>
       <Port>
         <HostPort>5005</HostPort>
         <ContainerPort>5005</ContainerPort>
@@ -84,7 +72,7 @@
     </Volume>	
   </Data>
   <Version></Version>
-  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5005]/</WebUI>
   <Banner>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Banner>
   <Icon>http://i.imgur.com/22PDdC8.png</Icon>
   <ExtraParams></ExtraParams>
