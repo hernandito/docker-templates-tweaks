@@ -13,12 +13,6 @@
   <Repository>hernandito/sonoso-api-nodejs</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
-  <Environment>
-    <Variable>
-      <Name>TERM</Name>
-      <Value>xterm</Value> 
-    </Variable>
-  </Environment>
   <Networking>
     <Mode>host</Mode>
      <Publish>
