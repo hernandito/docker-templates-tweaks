@@ -29,26 +29,6 @@
       <ContainerDir>/app/</ContainerDir>
 	  <Mode>rw</Mode>
     </Volume>
-    <Volume>	
-      <HostDir>/mnt/cache/appdata/sonos-api/clips</HostDir>
-      <ContainerDir>/app/static/clips/</ContainerDir>
-	  <Mode>rw</Mode>
-    </Volume>
-    <Volume>	
-      <HostDir>/mnt/cache/appdata/sonos-api/settings</HostDir>
-      <ContainerDir>/app/settings/</ContainerDir>
-	  <Mode>rw</Mode>
-    </Volume>
-    <Volume>	
-      <HostDir>/mnt/cache/appdata/sonos-api/cache/</HostDir>
-      <ContainerDir>/app/cache</ContainerDir>
-	  <Mode>rw</Mode>
-    </Volume>
-    <Volume>	
-	  <HostDir>/mnt/cache/appdata/sonos-api/presets/</HostDir>
-      <ContainerDir>/app/presets/</ContainerDir>
-	  <Mode>rw</Mode>
-    </Volume>
   </Data>
   <WebUI>http://[IP]:[PORT:5005]/</WebUI>
   <Banner>http://i.imgur.com/zlBhvgD.png</Banner>
