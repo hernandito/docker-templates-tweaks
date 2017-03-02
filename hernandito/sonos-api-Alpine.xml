@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Container>
-  <Name>Sonos API</Name>
+  <Name>Sonos API Alpine</Name>
   <Beta>True</Beta>
   <Category>MediaServer:Video MediaServer:Music</Category>
   <Description>
@@ -8,9 +8,8 @@
 
 
   </Description>
-  <Registry>https://hub.docker.com/r/hernandito/sonos-api-unraid/</Registry>
-  <GitHub>https://github.com/hernandito/Sonos-API-unRAID</GitHub>
-  <Repository>hernandito/sonos-api-unraid</Repository>
+  <Registry>https://hub.docker.com/r/hernandito/sonoso-api-nodejs/</Registry>
+  <Repository>hernandito/sonoso-api-nodejs</Repository>
   <BindTime>true</BindTime>
   <Privileged>false</Privileged>
   <Networking>
@@ -25,7 +24,7 @@
   </Networking>
   <Data>
     <Volume>  
-      <HostDir>/mnt/cache/appdata/sonos-api/</HostDir>
+      <HostDir>/mnt/cache/appdata/sonos-api-alpine/</HostDir>
       <ContainerDir>/app/</ContainerDir>
 	  <Mode>rw</Mode>
     </Volume>
