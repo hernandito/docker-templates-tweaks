@@ -19,7 +19,12 @@
         <ContainerPort>5005</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-    </Publish>
+      <Port>
+        <HostPort>5006</HostPort>
+        <ContainerPort>5006</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+	  </Publish>
   </Networking>
   <Data>
     <Volume>  
