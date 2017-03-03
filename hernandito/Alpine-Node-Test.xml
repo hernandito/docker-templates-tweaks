@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container>
+  <Name>Alpine Node Test</Name>
+  <Beta>True</Beta>
+  <Category>MediaServer:Video MediaServer:Music</Category>
+  <Description>
+    Sonos web-based API [br][br]
+
+  </Description>
+  <Registry>https://hub.docker.com/r/hernandito/sonoso-api-nodejs/</Registry>
+  <Repository>hernandito/sonoso-api-nodejs</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>host</Mode>
+     <Publish>
+      <Port>
+        <HostPort>5005</HostPort>
+        <ContainerPort>5005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>  
+      <HostDir>/mnt/cache/appdata/alpine-node-test/</HostDir>
+      <ContainerDir>/app/</ContainerDir>
+	  <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5005]/</WebUI>
+  <Banner>http://i.imgur.com/zlBhvgD.png</Banner>
+  <Icon>http://i.imgur.com/oYK3bk5.png</Icon>
+</Container>
