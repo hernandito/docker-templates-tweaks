@@ -16,8 +16,8 @@
     <Mode>host</Mode>
      <Publish>
       <Port>
-        <HostPort>5005</HostPort>
-        <ContainerPort>5005</ContainerPort>
+        <HostPort>5008</HostPort>
+        <ContainerPort>5008</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -29,7 +29,7 @@
 	  <Mode>rw</Mode>
     </Volume>
   </Data>
-  <WebUI>http://[IP]:[PORT:5005]/</WebUI>
+  <WebUI>http://[IP]:[PORT:5008]/</WebUI>
   <Banner>http://i.imgur.com/zlBhvgD.png</Banner>
   <Icon>http://i.imgur.com/oYK3bk5.png</Icon>
 </Container>
