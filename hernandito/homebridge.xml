@@ -37,5 +37,5 @@
   </Data>
   <WebUI></WebUI>
   <Banner></Banner>
-  <Icon>https://raw.githubusercontent.com/lukeadair/docker-templates/master/lukeadair/images/homekit-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/hernandito/docker-templates-tweaks/master/hernandito/homekit-icon.png</Icon>
 </Containers>
