@@ -16,8 +16,8 @@
     <Mode>host</Mode>
      <Publish>
       <Port>
-        <HostPort>5008</HostPort>
-        <ContainerPort>5008</ContainerPort>
+        <HostPort>5005</HostPort>
+        <ContainerPort>5005</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -25,7 +25,7 @@
   <Data>
     <Volume>  
       <HostDir>/mnt/cache/appdata/sonos-api-alpine/</HostDir>
-      <ContainerDir>/src/</ContainerDir>
+      <ContainerDir>/app/</ContainerDir>
 	  <Mode>rw</Mode>
     </Volume>
   </Data>
