@@ -20,7 +20,7 @@
   [b]SINGLE_DOMAIN[/b] Valid Single Domain Name this will go in your Apache default.conf file. [b]USE ONLY ONE DOMAIN.[b][br] &#xD;
   [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]&#xD;
   &#xD;
-  [b][span style='color: #E80000;']A sample default.conf file is placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]&#xD;
+  [b][span style='color: #E80000;']A sample default.conf file is  placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]&#xD;
   &#xD;
   [span style='color: #0040ff;'][b]Please note.[/b] This container has to load a lot of dependencies. When installing for the first time, it will take a nice chunk of time before it loads. You can monitor the progress by clicking the log window.[/span][br][br]&#xD;
   &#xD;
