@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Apache-LE</Name>
+  <Repository>hernandito/apache-letsencrypt</Repository>
+  <Registry>https://hub.docker.com/r/hernandito/apache-letsencrypt/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS.[br]&#xD;
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+  [b]80[/b] Standard HTTP Port [br]&#xD;
+  [b]443[/b] Standard HTTPS Port [br]&#xD;
+  [b]/config[/b] Storing Configuration and the www folder[br]&#xD;
+  [b]//etc/letsencrypt[/b] Place this inside the config folder. Recommend using .../appdata/Apache-LE/letsencrypt/[br][br]&#xD;
+  &#xD;
+  [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]&#xD;
+  [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br]&#xD;
+  [b]SINGLE_DOMAIN[/b] Valid Single Domain Name this will go in your Apache default.conf file. [b]USE ONLY ONE DOMAIN.[b][br] &#xD;
+  [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]&#xD;
+  &#xD;
+  [b][span style='color: #E80000;']A sample default.conf file is placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]&#xD;
+  &#xD;
+  [span style='color: #0040ff;'][b]Please note.[/b] This container has to load a lot of dependencies. When installing for the first time, it will take a nice chunk of time before it loads. You can monitor the progress by clicking the log window.[/span][br][br]&#xD;
+  &#xD;
+  </Overview>
+  <Category>Network:Web Network:Proxy</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/hernandito/Apache-LetsEncrypt/master/apache_logo_medium_copy.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1526987504</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>This is an apache web server docker with reverse proxy services enabled. Reverse proxy gives the ability going to www.domain.com:8351 for a service, you can go direct to www.domain.com/service and also enable HTTPS.[br]&#xD;
+  [b][u][span style='color: #E80000;']Configuration[/span][/u][/b][br]&#xD;
+  [b]80[/b] Standard HTTP Port [br]&#xD;
+  [b]443[/b] Standard HTTPS Port [br]&#xD;
+  [b]/config[/b] Storing Configuration and the www folder[br]&#xD;
+  [b]//etc/letsencrypt[/b] Place this inside the config folder. Recommend using .../appdata/Apache-LE/letsencrypt/[br][br]&#xD;
+  &#xD;
+  [b]YOUR_EMAIL[/b] Email address used to register your domain name [br]&#xD;
+  [b]YOUR_DOMAIN[/b]Valid Domain Name that will point to this Docker.[br]&#xD;
+  [b]SINGLE_DOMAIN[/b] Valid Single Domain Name this will go in your Apache default.conf file. [b]USE ONLY ONE DOMAIN.[b][br] &#xD;
+  [b]ADVANCED_SCRIPT[/b] Set to "true" to allow automatic renewing of certificates.[br][br]&#xD;
+  &#xD;
+  [b][span style='color: #E80000;']A sample default.conf file is placed on the /config folder for your reference. Use this sample to edit your reverse proxies in /config/apache/site-confs/default.conf[/span][/b][br][br]&#xD;
+  &#xD;
+  [span style='color: #0040ff;'][b]Please note.[/b] This container has to load a lot of dependencies. When installing for the first time, it will take a nice chunk of time before it loads. You can monitor the progress by clicking the log window.[/span][br][br]&#xD;
+  &#xD;
+  </Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>81</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>443</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/Apache-LE/letsencrypt/</HostDir>
+      <ContainerDir>/etc/letsencrypt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Media/Music/Papi/</HostDir>
+      <ContainerDir>/music</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/cache/appdata/Apache-LE/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>archi@inch.com</Value>
+      <Name>YOUR_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>hernandito.com</Value>
+      <Name>SINGLE_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>hernandito.com, www.hernandito.com, ruiz.tv</Value>
+      <Name>YOUR_DOMAIN</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Config Name="Host Port 1" Target="80" Default="81" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">81</Config>
+  <Config Name="Host Port 2" Target="443" Default="443" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">443</Config>
+  <Config Name="Host Path 2" Target="/etc/letsencrypt" Default="" Mode="rw" Description="Container Path: /etc/letsencrypt" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/Apache-LE/letsencrypt/</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Key 3" Target="YOUR_EMAIL" Default="youremail@here.com" Mode="" Description="Container Variable: YOUR_EMAIL" Type="Variable" Display="always" Required="false" Mask="false">archi@inch.com</Config>
+  <Config Name="Key 4" Target="SINGLE_DOMAIN" Default="yourdomain.com" Mode="" Description="Container Variable: SINGLE_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">hernandito.com</Config>
+  <Config Name="Key 5" Target="YOUR_DOMAIN" Default="yourdomain.com, www.yourdomain.com" Mode="" Description="Container Variable: YOUR_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">hernandito.com, www.hernandito.com, ruiz.tv</Config>
+  <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/Music/Papi/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/Apache-LE" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/Apache-LE/</Config>
+</Container>
