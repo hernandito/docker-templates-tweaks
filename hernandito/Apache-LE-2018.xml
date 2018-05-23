@@ -121,5 +121,5 @@
   <Config Name="Key 4" Target="SINGLE_DOMAIN" Default="yourdomain.com" Mode="" Description="Container Variable: SINGLE_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">hernandito.com</Config>
   <Config Name="Key 5" Target="YOUR_DOMAIN" Default="yourdomain.com, www.yourdomain.com" Mode="" Description="Container Variable: YOUR_DOMAIN" Type="Variable" Display="always" Required="false" Mask="false">hernandito.com, www.hernandito.com, ruiz.tv</Config>
   <Config Name="Music" Target="/music" Default="" Mode="rw" Description="Container Path: /music" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Media/Music/Papi/</Config>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/Apache-LE" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/Apache-LE/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/cache/appdata/Apache-LE" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/cache/appdata/Apache-LE-2018/</Config>
 </Container>
