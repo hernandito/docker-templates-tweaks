@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Apache-LE</Name>
-  <Repository>hernandito/apache-letsencrypt</Repository>
-  <Registry>https://hub.docker.com/r/hernandito/apache-letsencrypt/</Registry>
+  <Repository>hernandito/apache-letsencrypt-2018</Repository>
+  <Registry>https://hub.docker.com/r/hernandito/apache-letsencrypt-2018/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Privileged>false</Privileged>
