@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Apache-LE</Name>
+  <Name>Apache-LE-2018</Name>
   <Repository>hernandito/apache-letsencrypt-2018</Repository>
   <Registry>https://hub.docker.com/r/hernandito/apache-letsencrypt-2018/</Registry>
   <Network>bridge</Network>
@@ -80,7 +80,7 @@
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/cache/appdata/Apache-LE/</HostDir>
+      <HostDir>/mnt/cache/appdata/Apache-LE-2018/</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
